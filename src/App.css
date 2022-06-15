@@ -1,0 +1,37 @@
+.navbar {
+  border-bottom: solid 1px #EBEBEB;
+}
+
+/* you can change it to #ffffff after you implment your main scren to different color */
+.bottom-tab-nav {
+  border-top: solid 1px #EBEBEB;
+}
+
+.iconcontainer{
+  color: #bcbcbc;
+  margin-top: 7px;
+}
+
+.nav-link,
+.bottom-nav-link {
+  border:2px solid rgba(255,255,255,255);
+  border-radius: 50%;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  padding: 0px;
+ 
+  top: 0px;
+  
+
+}
+
+.bottom-nav-link.active {
+  background: #3f93bc;
+
+  
+}
+
+.bottom-nav-link.active >.iconcontainer{
+  color: rgb(226, 226, 226);
+} 

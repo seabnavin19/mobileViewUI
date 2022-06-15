@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Sidebar from './components/Sidebar';
+import Sidebar from './Components/Sidebar';
 import AboutUs from './pages/AboutUs';
 import Home from './pages/Home';
 import { Route } from 'react-router';

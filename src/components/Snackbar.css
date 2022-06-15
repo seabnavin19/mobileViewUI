@@ -1,6 +1,7 @@
 .snackbar {
   position: fixed;
-  transform: translate(-100%, -100%); 
+  left: 50%;
+  transform: translate(-50%, -50%); 
   width: 350px;
   height: 60px;
   border-radius: 30px;
@@ -19,7 +20,7 @@
 
 #show {
   visibility: visible;
-  animation: fadeIn 2.5s, fadeOut 2.5s 2.5s;
+  animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
 }
 #hide {
   visibility: hidden;

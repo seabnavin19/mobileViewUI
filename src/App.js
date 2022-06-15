@@ -1,14 +1,16 @@
 
 import "./App.css";
 import SwitchSample from "./switchSelector";
+import Navbar from "./components/Navbar"
+import Card from "./components/Card";
 
 function App() {
   return (
-    <div>
-    <Navbar  />
-  </div>
+  
     <div className="App">
+      <Navbar/>
       <SwitchSample/>
+      <Card />
     </div>
   );
 

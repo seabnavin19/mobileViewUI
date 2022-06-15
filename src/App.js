@@ -1,11 +1,17 @@
-import Navbar from './components/Navbar'
-import './App.css';
+
+import "./App.css";
+import SwitchSample from "./switchSelector";
+
 function App() {
-  
-  return (<div>
+  return (
+    <div>
     <Navbar  />
   </div>
-);
+    <div className="App">
+      <SwitchSample/>
+    </div>
+  );
+
 }
 
 export default App;

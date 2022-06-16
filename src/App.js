@@ -9,12 +9,13 @@ import Navigation from './page/Navigation'
 
 
 function App() {
+  
   return (
     <div>
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route path="/home" element={<Home/>} />
+          <Route path="/" element={<Home/>} />
           <Route path="/search" element={<Search/>} />
           <Route path="/history" element={<History/>} />
         </Routes>

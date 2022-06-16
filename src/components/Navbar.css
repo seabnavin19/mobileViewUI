@@ -73,3 +73,14 @@ nav{
     transition: all 0.3s ease-in-out;
   }
 }
+
+.navbar {
+  background-color: white;
+  color: #3399cc;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  padding-bottom: 5rem;
+}
+

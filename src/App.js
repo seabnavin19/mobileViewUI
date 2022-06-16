@@ -1,42 +1,34 @@
-
+import React, { useState } from 'react';
+import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
 import "./App.css";
 import SwitchSample from "./switchSelector";
-import Navbar from "./components/Navbar"
 import Card from "./components/Card";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './page/home'
+import Backdrop from './components/Backdrop';
 import Search from './page/search'
 import History  from './page/history';
-
 import Navigation from './page/Navigation'
-
-import React from 'react';
-import './App.css';
-import Sidebar from './Components/Sidebar';
-import AboutUs from './pages/AboutUs';
-
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
+
+  const[sidebar, setSidebar] = useState(false);
+
+  const toggleSiderbar = () => {
+    setSidebar ((prevState) => !prevState)
+  }
   return (
-  
     <div className="App">
-      <Navbar/>
+      <Navbar openSidebar = {toggleSiderbar}  />
+      <Backdrop sidebar={sidebar} closeSidebar={toggleSiderbar}/>
+      <Sidebar sidebar={sidebar}/>
+      
       <SwitchSample/>
       <Card />
-      {/* <Router>
-      <Sidebar />
-      <Routes>
-        <Route path='/' exact component={Home} />
-        <Route path='/about' component={AboutUs} />
-      </Routes>
-    </Router> */}
 
       <BrowserRouter>
         <Navigation />
-       
-
       </BrowserRouter>
     </div>
   );

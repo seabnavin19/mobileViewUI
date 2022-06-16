@@ -25,6 +25,9 @@ $(".next").click(function () {
 });
 
 function Card() {
+  // useEffect(() => {
+  //   return Card;
+  // }, []);
   return (
     <div className="container">
       <div className="left-card" />

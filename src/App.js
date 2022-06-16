@@ -10,6 +10,14 @@ import History  from './page/history';
 
 import Navigation from './page/Navigation'
 
+import React from 'react';
+import './App.css';
+import Sidebar from './Components/Sidebar';
+import AboutUs from './pages/AboutUs';
+
+import { BrowserRouter as Router } from 'react-router-dom';
+
+
 function App() {
   return (
   
@@ -17,14 +25,17 @@ function App() {
       <Navbar/>
       <SwitchSample/>
       <Card />
+      {/* <Router>
+      <Sidebar />
+      <Routes>
+        <Route path='/' exact component={Home} />
+        <Route path='/about' component={AboutUs} />
+      </Routes>
+    </Router> */}
 
       <BrowserRouter>
         <Navigation />
-        <Routes>
-          <Route path="/home" element={<Home/>} />
-          <Route path="/search" element={<Search/>} />
-          <Route path="/history" element={<History/>} />
-        </Routes>
+       
 
       </BrowserRouter>
     </div>

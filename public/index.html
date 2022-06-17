@@ -19,7 +19,6 @@
         width: 1.2rem;
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
-        /* margin-top: 1rem; */
         left: 0;
         box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.4);
         position: absolute;
@@ -31,7 +30,6 @@
         width: 1.2rem;
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
-        /* margin-top: 1rem; */
         right: 0;
         box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.4);
         position: absolute;
@@ -59,7 +57,9 @@
         background-color: #f2eff0;
         box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.5);
         border-radius: 1rem;
-        /* display: inline-block; */
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
         position: absolute;
         transform-origin: 0% 50%;
         transition: all 1s ease;
@@ -68,16 +68,21 @@
       }
       .card-stack .card h2 {
         color: #3399cc;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: bold;
-      }
-      .first-card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-top: 5px;
       }
       .image {
+        margin-top: -1rem;
         width: 16rem;
+      }
+      .visa {
+        margin-top: 1.5rem;
+        width: 8rem;
+      }
+      .master {
+        margin-top: 1.5rem;
+        width: 8rem;
       }
 
       .card1 {
@@ -96,13 +101,6 @@
         animation-name: remove;
         animation-duration: 1s;
       }
-
-      /* .card4 {
-        z-index: 400;
-        top: 0px;
-        animation-name: remove;
-        animation-duration: 1s;
-      } */
 
       @keyframes remove {
         0% {
@@ -130,14 +128,17 @@
 
     <div class="card-stack" onclick="nextCard(event);">
       <div class="left-card"></div>
-      <div class="card first-card">
+      <div class="card">
+        <h2>My Card</h2>
         <img class="image" src="./card-logo.png" alt="" />
       </div>
       <div class="card">
         <h2>Visa Card</h2>
+        <img class="visa" src="./visa.png" alt="" />
       </div>
       <div class="card">
         <h2>Master Card</h2>
+        <img class="master" src="./master.png" alt="" />
       </div>
       <div class="right-card"></div>
     </div>

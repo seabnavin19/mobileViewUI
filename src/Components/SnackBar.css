@@ -4,7 +4,7 @@
     top: 81%;
     transform: translate(-50%, -50%); 
     width: 85%;
-    height: 2.8rem;
+    height: 3rem;
     border-radius: 30px;
     border: 0.1em solid rgba(128, 128, 128, .25);
     display: flex;
@@ -14,7 +14,6 @@
   
   .snackbar .message {
     flex: 50%;
-    /* font-weight: bold; */
     font-size: 14px;
     color: rgb(250, 24, 24);
     text-align: center;

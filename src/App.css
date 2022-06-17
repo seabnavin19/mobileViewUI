@@ -1,13 +1,10 @@
 
 .navbar {
-  /* border-bottom: solid 5px #EBEBEB; */
-  /* background-color: crimson; */
   width: 100%;
 }
 
 /* you can change it to #ffffff after you implment your main scren to different color */
 .bottom-tab-nav {
-  /* border-top: solid 4px #c5c5c5; */
   margin-bottom: 0.5rem;
   width: 100%;
 }
@@ -15,7 +12,6 @@
   width: 100%;
   margin-bottom: -5px;
   border-top: 0.1px solid rgba(128, 128, 128, .5);
-  /* z-index: 0; */
 }
 
 .iconcontainer{
@@ -27,7 +23,6 @@
 
 .nav-link,
 .bottom-nav-link {
-  /* border:2px solid rgba(255,255,255,255); */
   border-radius: 50%;
   align-items: center;
   width: 62px;

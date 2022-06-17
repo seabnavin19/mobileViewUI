@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mobileViewUI/static/css/main.60d00442.css",
+    "main.js": "/mobileViewUI/static/js/main.46cc1dac.js",
+    "static/js/787.7f2cb4d6.chunk.js": "/mobileViewUI/static/js/787.7f2cb4d6.chunk.js",
+    "index.html": "/mobileViewUI/index.html",
+    "main.60d00442.css.map": "/mobileViewUI/static/css/main.60d00442.css.map",
+    "main.46cc1dac.js.map": "/mobileViewUI/static/js/main.46cc1dac.js.map",
+    "787.7f2cb4d6.chunk.js.map": "/mobileViewUI/static/js/787.7f2cb4d6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60d00442.css",
+    "static/js/main.46cc1dac.js"
+  ]
+}

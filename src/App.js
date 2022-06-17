@@ -1,6 +1,6 @@
 import "./App.css";
-import SwitchSample from "./Components/switchSelector";
-import Navbar from "./Components/Navbar";
+import SwitchSample from "./components/switchSelector";
+import Navbar from "./components/Navbar";
 // import Card from "./Components/Card";
 import { BrowserRouter } from "react-router-dom";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";

@@ -5,14 +5,17 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faHome, faHistory } from "@fortawesome/free-solid-svg-icons";
 
-const tabs = [
-  {
+
+
+
+
+
+const tabs = [{
     route: "/search",
     icon: faSearch,
-    label: "Search",
-  },
-  {
-    route: "/home",
+    label: "Search"
+    },{
+    route: "/",
     icon: faHome,
     label: "Home",
   },

@@ -40,7 +40,7 @@ const Navigation = (props) => {
                 <NavLink
                   to={tab.route}
                   className="nav-link bottom-nav-link"
-                  activeClassName="active"
+                  activeClassName="active"  
                 >
                   <div className="iconcontainer">
                     <FontAwesomeIcon size="lg" icon={tab.icon} />

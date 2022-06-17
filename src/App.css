@@ -1,31 +1,37 @@
 
 .navbar {
-  border-bottom: solid 1px #EBEBEB;
+  /* border-bottom: solid 5px #EBEBEB; */
   /* background-color: crimson; */
   width: 100%;
 }
 
 /* you can change it to #ffffff after you implment your main scren to different color */
 .bottom-tab-nav {
-  border-top: solid 1px #EBEBEB;
-  margin-bottom: 2rem;
+  /* border-top: solid 4px #c5c5c5; */
+  margin-bottom: 0.5rem;
   width: 97%;
+}
+.bottomLine {
+  width: 100%;
+  margin-bottom: -5px;
+  border-top: 0.1px solid rgba(128, 128, 128, .5);
+  /* z-index: 0; */
 }
 
 .iconcontainer{
   color: #bcbcbc;
-  margin-top: 7px;
+  margin-top: 40%;
   display: flex;
   justify-content: center;
 }
 
 .nav-link,
 .bottom-nav-link {
-  border:2px solid rgba(255,255,255,255);
+  /* border:2px solid rgba(255,255,255,255); */
   border-radius: 50%;
   align-items: center;
-  width: 55px;
-  height: 55px;
+  width: 62px;
+  height: 62px;
   padding: 0px;
   
 
@@ -33,9 +39,12 @@
 
 .bottom-nav-link.active {
   background: #3f93bc;
+  margin-top: -8px;
   
 }
 
 .bottom-nav-link.active >.iconcontainer{
-  color: rgb(226, 226, 226);
+  color: rgb(255, 255, 255);
+  margin-top: 25%;
+  font-size: 1.4rem;
 } 

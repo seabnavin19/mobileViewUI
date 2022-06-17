@@ -32,6 +32,7 @@ const Navigation = (props) => {
         className="navbar fixed-bottom navbar-light bottom-tab-nav "
         role="navigation"
       >
+        <div className="bottomLine" />
         <Nav className="w-100">
           <div className=" d-flex flex-row justify-content-around w-100">
             {tabs.map((tab, index) => (

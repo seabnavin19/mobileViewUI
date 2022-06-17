@@ -10,34 +10,175 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
+    <style>
+      .left-card {
+        height: 12rem;
+        background-color: #f4f3f4;
+        width: 1.2rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        /* margin-top: 1rem; */
+        left: 0;
+        box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.4);
+        position: absolute;
+        display: flex;
+      }
+      .right-card {
+        height: 12rem;
+        background-color: #f4f3f4;
+        width: 1.2rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        /* margin-top: 1rem; */
+        right: 0;
+        box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.4);
+        position: absolute;
+        z-index: 100;
+      }
+      .card-stack {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        height: 20rem;
+      }
+
+      .container {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 24rem;
+        background-color: aqua;
+      }
+
+      .card-stack .card {
+        width: 82%;
+        height: 12rem;
+        background-color: #f2eff0;
+        box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.5);
+        border-radius: 1rem;
+        /* display: inline-block; */
+        position: absolute;
+        transform-origin: 0% 50%;
+        transition: all 1s ease;
+        text-align: center;
+        padding-top: 5px;
+      }
+      .card-stack .card h2 {
+        color: #3399cc;
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+      .first-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .image {
+        width: 16rem;
+      }
+
+      .card1 {
+        z-index: 1000;
+        top: 4.8rem;
+      }
+
+      .card2 {
+        z-index: 800;
+        top: 2.4rem;
+      }
+
+      .card3 {
+        z-index: 600;
+        top: 0;
+        animation-name: remove;
+        animation-duration: 1s;
+      }
+
+      /* .card4 {
+        z-index: 400;
+        top: 0px;
+        animation-name: remove;
+        animation-duration: 1s;
+      } */
+
+      @keyframes remove {
+        0% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+        50% {
+          transform: translateY(-80px);
+          opacity: 0;
+        }
+        51% {
+          transform: translateY(10px) scale(0.97);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0px) scale(0.97);
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div class="card-stack" onclick="nextCard(event);">
+      <div class="left-card"></div>
+      <div class="card first-card">
+        <img class="image" src="./card-logo.png" alt="" />
+      </div>
+      <div class="card">
+        <h2>Visa Card</h2>
+      </div>
+      <div class="card">
+        <h2>Master Card</h2>
+      </div>
+      <div class="right-card"></div>
+    </div>
   </body>
+  <script>
+    var cardStack = document.getElementsByClassName("card");
+    var cardArray = []; // Does not change
+    var stateArray = []; // Changes - keeps track of card state
+    var prevStateArray = [];
+
+    function cardInit() {
+      for (var i = 0; i < cardStack.length; i++) {
+        var cNum = i + 1;
+        var cName = "card" + cNum.toString();
+        cardStack[i].classList.add(cName);
+        cardArray.push(cNum);
+        stateArray = cardArray;
+      }
+    }
+
+    function stackRefresh() {
+      prevStateArray = stateArray.slice(0);
+      stateArray.unshift(stateArray.pop());
+    }
+
+    function nextCard(e) {
+      var currentCssClass = e.srcElement.classList[1];
+      var currentNumber = currentCssClass.substring(4, 5);
+
+      for (var j = 1; j < currentNumber; j++) {
+        stackRefresh();
+
+        for (var i = 0; i < cardStack.length; i++) {
+          var cName = "card" + prevStateArray[i].toString();
+          var cNameNew = "card" + stateArray[i].toString();
+          cardStack[i].classList.remove(cName);
+          cardStack[i].classList.add(cNameNew);
+        }
+      }
+    }
+
+    cardInit();
+  </script>
 </html>

@@ -1,7 +1,7 @@
 import "./App.css";
 import SwitchSample from "./Components/switchSelector";
 import Navbar from "./Components/Navbar";
-import Card from "./Components/Card";
+// import Card from "./Components/Card";
 import { BrowserRouter } from "react-router-dom";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Home from './page/home'
@@ -10,7 +10,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import Navigation from "./page/Navigation";
 
-import React, { useRef } from "react";
+import React from "react";
 
 import "./App.css";
 // import Sidebar from './Components/Sidebar';
@@ -23,7 +23,6 @@ function App() {
     <div>
       <Navbar />
       <SwitchSample />
-      <Card />
       {/* <Router>
       <Sidebar />
       <Routes>

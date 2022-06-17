@@ -21,13 +21,19 @@ const Navbar = () => {
         </div>
         <ul className={show ? "menu show" : "menu"}>
           <li>
-            <a href="/">Home</a>
+            <a className="text-color" href="/">
+              <h1>Home</h1>
+            </a>
           </li>
           <li>
-            <a href="/">About</a>
+            <a href="/">
+              <h1>About</h1>
+            </a>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <a href="/">
+              <h1>Contact</h1>
+            </a>
           </li>
         </ul>
         <img

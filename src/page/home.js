@@ -4,8 +4,7 @@ const Home = (props) => {
 
   return (
     <div>
-        <p>12</p>
-      Home
+    
     </div>
   )
 };

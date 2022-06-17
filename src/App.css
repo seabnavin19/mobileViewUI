@@ -1,15 +1,22 @@
+
 .navbar {
   border-bottom: solid 1px #EBEBEB;
+  /* background-color: crimson; */
+  width: 100%;
 }
 
 /* you can change it to #ffffff after you implment your main scren to different color */
 .bottom-tab-nav {
   border-top: solid 1px #EBEBEB;
+  margin-bottom: 2rem;
+  width: 97%;
 }
 
 .iconcontainer{
   color: #bcbcbc;
   margin-top: 7px;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-link,
@@ -27,7 +34,6 @@
 
 .bottom-nav-link.active {
   background: #3f93bc;
-
   
 }
 

@@ -6,24 +6,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm install` 
-
-For install node_modules 
-
-## dependencies
-
-### `npm i --save react-router`
-### `npm i --save react-router-dom`
-### `npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons@fortawesome/react-fontawesome`
-### `npm i --save bootstrap`
-### `npm i --save reactstrap`
-
-For reactstrap to work, we also need to import Bootstrap CSS into our src/index.js:
-
-### `import 'bootstrap/dist/css/bootstrap.min.css';`
-
-## For run project
-
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -86,6 +68,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-here is the reference[https://mariestarck.com/how-to-create-a-bottom-tab-navigator/]

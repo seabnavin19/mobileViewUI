@@ -21,6 +21,7 @@ class Item extends React.Component {
       backgroundSize: '8rem auto',
       backgroundRepeat: 'no-repeat',
       display: 'inline-block',
+      boxShadow: '0px 10px 10px #000000, 0px -10px 10px #000000',
       position: 'absolute',
       backgroundColor: '#f2eff0',
       transitionTimingFunction: 'ease-in-out',
@@ -28,7 +29,6 @@ class Item extends React.Component {
       // boxShadow: '30px 5px 15px -10px rgba(0,0,0,.15), -30px 5px 15px -10px rgba(0,0,0,.15)',
       borderRadius: '1rem',
       backgroundPosition: 'center',
-      boxShadow: '0 1px 6px 1px rgb(0 0 0 / 50%)',
       backgroundClip: 'border-box',
       border: '1px solid rgba(0,0,0,.125)'
     };

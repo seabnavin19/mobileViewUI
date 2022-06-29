@@ -46,7 +46,11 @@ class Component extends React.Component {
         "./img/master.png",
         "./img/cardlogo.png",
         "./img/visa.png",
-       
+        "./img/cardlogo.png",
+        "./img/visa.png",
+        "./img/master.png",
+        "./img/cardlogo.png",
+        "./img/visa.png", 
     ];
     let labelsArr = [
       'My Card',
@@ -54,7 +58,11 @@ class Component extends React.Component {
       'Master Card',
       'My Card',
       'Visa Card',
-      
+      'My Card',
+      'Visa Card',
+      'Master Card',
+      'My Card',
+      'Visa Card',
     ];
     this.labelsArr = labelsArr;
     let props = {};

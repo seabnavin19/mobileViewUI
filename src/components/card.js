@@ -13,15 +13,15 @@ class Component extends React.Component {
     this.code = this.code.bind(this);
     this.state = {
      
-      width: 310,
+      width: 300,
       passWidth: true,
-      height: 600,
+      height: 640,
       passHeight: true,
       passLabels: true,
       passItemRatio: true,
       itemRatio: {
-        x: 8,
-        y: 5
+        x: 11,
+        y: 6
       },
   
       direction: 'vertical'
@@ -30,11 +30,11 @@ class Component extends React.Component {
       this.setState((prevState)=>{
         if (prevState.direction === 'vertical') {
           return {
-            height: 600
+            height: 640
           };
         }
         return {
-          width: 310
+          width: 300
         }
       });
     });
@@ -51,8 +51,28 @@ class Component extends React.Component {
         "./img/master.png",
         "./img/cardlogo.png",
         "./img/visa.png", 
+        "./img/cardlogo.png",
+        "./img/visa.png",
+        "./img/master.png",
+        "./img/cardlogo.png",
+        "./img/visa.png",
+        "./img/cardlogo.png",
+        "./img/visa.png",
+        "./img/master.png",
+        "./img/cardlogo.png",
+        "./img/visa.png", 
     ];
     let labelsArr = [
+      'My Card',
+      'Visa Card',
+      'Master Card',
+      'My Card',
+      'Visa Card',
+      'My Card',
+      'Visa Card',
+      'Master Card',
+      'My Card',
+      'Visa Card',
       'My Card',
       'Visa Card',
       'Master Card',
@@ -129,14 +149,14 @@ class Component extends React.Component {
       return (<input placeholder={axis}
                     type="number" 
                     min="1"
-                    style={{width: '60px'}}
+                    style={{width: '20px'}}
                     value={this.state.itemRatio[axis]} 
                     onChange={(e)=>{
                       let newState = {
                         itemRatio: {}
                       };
                       newState.itemRatio[axis] = parseInt(e.target.value);
-                      let otherAxis = axis === 8 ? 5 : 8;
+                      let otherAxis = axis === 11 ? 6 : 11;
                       newState.itemRatio[otherAxis] = this.state.itemRatio[otherAxis];
                       this.setState(newState);
                     }}

@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: auto;
+  height: 640px;
 }
 
 .properties {
@@ -17,7 +19,7 @@ code {
   white-space: pre-wrap 
 }
 .left-card {
-  height: 12rem;
+  height: 10rem;
   background-color: #f4f3f4;
   width: 1.2rem;
   border-top-right-radius: 1rem;
@@ -29,7 +31,7 @@ code {
 }
 
 .right-card {
-  height: 12rem;
+  height: 10rem;
   background-color: #f4f3f4;
   width: 1.2rem;
   border-top-left-radius: 1rem;

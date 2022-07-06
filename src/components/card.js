@@ -19,7 +19,7 @@ class Component extends React.Component {
       passLabels: true,
       passItemRatio: true,
       itemRatio: {
-        x: 8,
+        x: 10,
         y: 5
       },
   
@@ -155,7 +155,7 @@ class Component extends React.Component {
                         itemRatio: {}
                       };
                       newState.itemRatio[axis] = parseInt(e.target.value);
-                      let otherAxis = axis === 8 ? 5 : 8;
+                      let otherAxis = axis === 10 ? 5 : 10;
                       newState.itemRatio[otherAxis] = this.state.itemRatio[otherAxis];
                       this.setState(newState);
                     }}

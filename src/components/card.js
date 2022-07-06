@@ -12,16 +12,15 @@ class Component extends React.Component {
     this.itemRatio = this.itemRatio.bind(this);
     this.code = this.code.bind(this);
     this.state = {
-     
       width: 300,
       passWidth: true,
-      height: 640,
+      height: 600,
       passHeight: true,
       passLabels: true,
       passItemRatio: true,
       itemRatio: {
-        x: 11,
-        y: 6
+        x: 8,
+        y: 5
       },
   
       direction: 'vertical'
@@ -30,7 +29,7 @@ class Component extends React.Component {
       this.setState((prevState)=>{
         if (prevState.direction === 'vertical') {
           return {
-            height: 640
+            height: 600
           };
         }
         return {
@@ -156,11 +155,11 @@ class Component extends React.Component {
                         itemRatio: {}
                       };
                       newState.itemRatio[axis] = parseInt(e.target.value);
-                      let otherAxis = axis === 11 ? 6 : 11;
+                      let otherAxis = axis === 8 ? 5 : 8;
                       newState.itemRatio[otherAxis] = this.state.itemRatio[otherAxis];
                       this.setState(newState);
                     }}
-                    disabled={!this.state.passItemRatio} />);
+                    disabled={!this.state.passItemRatio}/>);
     };
   }
    code(){

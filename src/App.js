@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import Navigation from "./page/Navigation";
 import Card from "./components/card";
 
+
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Home from './page/home'
 // import Search from './page/search'
@@ -18,7 +19,10 @@ function App() {
     <div>
       <Navbar />
       <SwitchSample />
-    
+      <div>
+        <Card />
+      </div>
+  
       {/* <Router>
       <Sidebar />
       <Routes>
@@ -28,7 +32,6 @@ function App() {
     </Router> */}
 
       <BrowserRouter>
-        <Card />
         <Navigation />
       </BrowserRouter>
     </div>
